@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Secret Creativity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root" class="container"></div>
+  <h1>Secret Creativity</h1>
+  <h2>¡¡Bienvenid@!! </h2>
+  <p>¡Codifica tus ideas mas preciadas para que solo las tengas tú!</p>
+  <p>A continuación, por favor ingresa el texto con la maravillosa idea que deseas codificar o decodificar</p>
+  <textarea type="text" id="inputText" placeholder="Ingresa el texto que deseas cifrar/descifrar" name="text-example"
+    autocomplete="off" cols="35" rows="7"> </textarea>
+  <p class="text">Ingresa cuanto caracteres quieres desplazar tu texto</p>
+  <input type="number" id="offset" placeholder="Indique con números">
+  <p>si deseas cifrar tu texto, haz click aquí</p>
+
+  <button id="cipher"> CIFRAR </button>
+  <p>si deseas descifrar qué dice tu texto, haz click aquí</p>
+
+  <button id="desCipher"> DESCIFRAR </button>
+
+  <p>tu nuevo texto aparecerá aquí abajo</p>
+
+  <textarea type="text" id="newText" readonly name="text-example" autocomplete="off" cols="35" rows="7"> </textarea>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
